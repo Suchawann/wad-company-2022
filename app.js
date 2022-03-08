@@ -31,6 +31,13 @@ app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/customers', customerRouter);
 
+// connect to frontend
+app.use(express.static(path.join(__dirname, 'public', 'react-quotation')));
+
+app.get('/react-quotation/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'react-quotation', 'index.html'));
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
