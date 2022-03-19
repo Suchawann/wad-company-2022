@@ -36,9 +36,8 @@ app.use('/quotations', quotationRouter);
 // connect to frontend
 app.use(express.static(path.join(__dirname, 'public', 'react-quotation')));
 
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'react-quotation', 'index.html'));
-  res.redirect('/');
+app.get('public/react-quotation/*', function (req, res) {
+  res.sendFile(path.join(__dirname));
 });
 
 // catch 404 and forward to error handler
