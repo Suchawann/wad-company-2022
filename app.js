@@ -34,10 +34,10 @@ app.use('/customers', customerRouter);
 app.use('/quotations', quotationRouter);
 
 // connect to frontend
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public', 'react-quotation')));
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'react-quotation', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'react-quotation'));
 });
 
 // catch 404 and forward to error handler
