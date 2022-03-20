@@ -38,7 +38,6 @@ app.use(express.static(path.join(__dirname, 'public', 'react-quotation')));
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'public', 'react-quotation', 'index.html'));
-  res.redirect('/react-quotation/quotation');
 });
 
 // catch 404 and forward to error handler
