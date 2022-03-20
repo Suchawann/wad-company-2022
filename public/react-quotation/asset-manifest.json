@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-quotation/static/css/main.671ed991.css",
-    "main.js": "/react-quotation/static/js/main.e27b1186.js",
+    "main.js": "/react-quotation/static/js/main.e3db9ad9.js",
     "static/js/111.49e100f2.chunk.js": "/react-quotation/static/js/111.49e100f2.chunk.js",
     "index.html": "/react-quotation/index.html",
     "main.671ed991.css.map": "/react-quotation/static/css/main.671ed991.css.map",
-    "main.e27b1186.js.map": "/react-quotation/static/js/main.e27b1186.js.map",
+    "main.e3db9ad9.js.map": "/react-quotation/static/js/main.e3db9ad9.js.map",
     "111.49e100f2.chunk.js.map": "/react-quotation/static/js/111.49e100f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.671ed991.css",
-    "static/js/main.e27b1186.js"
+    "static/js/main.e3db9ad9.js"
   ]
 }
