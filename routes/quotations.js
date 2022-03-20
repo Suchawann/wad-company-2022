@@ -34,6 +34,19 @@ router.post("/", (req, res, next) => {
   });
 });
 
-
+// Delete a quotation
+router.delete("/:id", (req, res, next) => {
+  const id = req.params['id'];
+  console.log('Delete this id', id)
+  console.debug('Quotation ID to delete', id);
+  Quotation.findByIdAndDelete(id, (err, doc) => {
+    if (err) {
+      console.error("Hey look, Error!", err);
+      res.json(err);
+    } else {
+      res.status(200).json(doc);
+    }
+  });
+});
 
 module.exports = router;
