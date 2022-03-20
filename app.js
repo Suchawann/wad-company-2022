@@ -35,7 +35,7 @@ app.use('/quotations', quotationRouter);
 
 // connect to frontend
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'react-quotation'));
+  res.sendFile(path.join(__dirname, 'public', 'react-quotation', 'index.html'));
 });
 
 app.use(express.static(path.join(__dirname, 'public', 'react-quotation')));
